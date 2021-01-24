@@ -194,7 +194,7 @@ const API = {
         return new Promise((resolve, reject) => {
             HttpRequest({
                 type: 'GET',
-                _url: `https://sc.ftqq.com/${SCKEY}.send`,
+                _url: `https://qmsg.zendee.cn/send/${SCKEY}`,
                 _query_string: {
                     text,
                     desp
