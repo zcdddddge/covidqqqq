@@ -44,7 +44,7 @@ exports.HttpRequest = obj => {
                 query_string = stringify(_query_string);
             }
             if (query_string != '') {
-                let url = _url + '?' + query_string;
+                 let url = _url + '?' + 'msg=' + query_string;
                 options.path = /(?<=https?:\/\/.*)\/.*/.exec(url)[0];
             }
             break;
